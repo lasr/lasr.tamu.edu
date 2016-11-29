@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Realization of a Spatial Augmented Reality System – A Digital Whiteboard Using a Kinect Sensor",
+    "author": "kolomenski",
+    "school": "Texas A&M University",
+    "date": "2013-12-01"
+  },
+  {
+    "title": "Development of a robotic simulation platform for spacecraft proximity operations and contact dynamics experiments",
+    "author": "probe",
+    "school": "Texas A&M University",
+    "date": "2013-12-01"
+  },
+  {
+    "title": "A Phase Based Dense Stereo Algorithm Implemented in CUDA",
+    "author": "macomber",
+    "school": "Texas A&M University",
+    "date": "2011-05-01"
+  },
+  {
+    "title": "Implementing Feedback Control on a Novel Proximity Operations Simulation Platform",
+    "author": "cavalieri",
+    "school": "Texas A&M University",
+    "date": "2011-05-01"
+  }
+]

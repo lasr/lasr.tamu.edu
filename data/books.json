@@ -1,0 +1,170 @@
+[
+  {
+    "title": "Elements of Spacecraft Control",
+    "edition": 2,
+    "authors": ["hurtado"],
+    "publisher": "Lulu",
+    "address": "Raleigh",
+    "year": 2016,
+    "link": {
+      "text": "Lulu",
+      "url": "http://www.lulu.com/shop/john-e-hurtado/elements-of-spacecraft-control/hardcover/product-22530491.html"
+    }
+  },
+  {
+    "title": "Analytical Mechanics of Space Systems",
+    "edition": 3,
+    "authors": ["schaub", "junkins"],
+    "publisher": "AIAA",
+    "address": "Reston, VA",
+    "year": 2014,
+    "link": {
+      "text": "Amazon",
+      "url": "http://www.amazon.com/dp/1624102409"
+    }
+  },
+  {
+    "title": "Engineering Your Academic Career",
+    "edition": null,
+    "authors": ["junkins"],
+    "publisher": "Lulu",
+    "address": "Raleigh",
+    "year": 2012,
+    "link": {
+      "text": "Lulu",
+      "url": "http://www.lulu.com/shop/john-l-junkins/engineering-your-academic-career/paperback/product-20083150.html"
+    }
+  },
+  {
+    "title": "Kinematic and Kinetic Principles",
+    "edition": 3,
+    "authors": ["hurtado"],
+    "publisher": "Lulu",
+    "address": "Raleigh",
+    "year": 2012,
+    "link": {
+      "text": "Lulu",
+      "url": "http://www.lulu.com/shop/john-e-hurtado/kinematic-and-kinetic-principles/hardcover/product-20602399.html"
+    }
+  },
+  {
+    "title": "Mostly Planar Motion",
+    "edition": null,
+    "authors": ["hurtado"],
+    "publisher": "Lulu",
+    "address": "Raleigh",
+    "year": 2012,
+    "link": {
+      "text": "Lulu",
+      "url": "http://www.lulu.com/shop/john-e-hurtado/mostly-planar-motion/hardcover/product-20602342.html"
+    }
+  },
+  {
+    "title": "Optimal Estimation of Dynamic Systems",
+    "edition": 2,
+    "authors": ["crassidis", "junkins"],
+    "publisher": "Chapman and Hall",
+    "address": null,
+    "year": 2011,
+    "link": {
+      "text": "Amazon",
+      "url": "http://www.amazon.com/dp/1439839859"
+    }
+  },
+  {
+    "title": "Elements of Spacecraft Control",
+    "edition": null,
+    "authors": ["hurtado"],
+    "publisher": "Lulu",
+    "address": "Raleigh",
+    "year": 2009,
+    "link": {
+      "text": "Lulu",
+      "url": "http://www.lulu.com/shop/john-e-hurtado/elements-of-spacecraft-control/hardcover/product-22530491.html"
+    }
+  },
+  {
+    "title": "Analytical Mechanics of Space Systems",
+    "edition": 2,
+    "authors": ["schaub", "junkins"],
+    "publisher": "AIAA",
+    "address": "Reston, VA",
+    "year": 2009,
+    "link": {
+      "text": "Amazon",
+      "url": "http://www.amazon.com/dp/1600867219"
+    }
+  },
+  {
+    "title": "Kinematic and Kinetic Principles",
+    "edition": 2,
+    "authors": ["hurtado"],
+    "publisher": "Lulu",
+    "address": "Raleigh",
+    "year": 2008,
+    "link": {
+      "text": null,
+      "url": null
+    }
+  },
+  {
+    "title": "Multi-Resolution Methods for Modeling and Control of Dynamical Systems",
+    "edition": null,
+    "authors": ["singla", "junkins"],
+    "publisher": "Chapman and Hall",
+    "address": null,
+    "year": 2008,
+    "link": {
+      "text": "Amazon",
+      "url": "http://www.amazon.com/dp/1584887699"
+    }
+  },
+  {
+    "title": "A Kinematics and Kinetics Primer",
+    "edition": null,
+    "authors": ["hurtado"],
+    "publisher": "Lulu",
+    "address": "Raleigh",
+    "year": 2008,
+    "link": {
+      "text": null,
+      "url": null
+    }
+  },
+  {
+    "title": "Analytical Mechanics of Space Systems",
+    "edition": null,
+    "authors": ["schaub", "junkins"],
+    "publisher": "AIAA",
+    "address": "Reston, VA",
+    "year": 2003,
+    "link": {
+      "text": "Amazon",
+      "url": "http://www.amazon.com/dp/1563475634"
+    }
+  },
+  {
+    "title": "Introduction to Dynamics and Control of Flexible Structures",
+    "edition": null,
+    "authors": ["junkins", "kim"],
+    "publisher": "AIAA",
+    "address": "Reston, VA",
+    "year": 1993,
+    "link": {
+      "text": "Amazon",
+      "url": "https://www.amazon.com/dp/1563470543"
+    }
+  },
+  {
+    "title": "Optimal Spacecraft Rotational Maneuvers",
+    "edition": null,
+    "authors": ["junkins", "turner"],
+    "publisher": "Elsevier Science",
+    "address": "Maryland Heights",
+    "year": 1986,
+    "link": {
+      "text": "Amazon",
+      "url": "http://www.amazon.com/dp/0444426191"
+    }
+  },
+]

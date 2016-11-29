@@ -1,0 +1,14 @@
+baseurl = "http://lasr.tamu.edu/"
+title = "LASR Laboratory - Texas A&M University"
+languageCode = "en-us"
+
+googleAnalytics = "UA-992496-5"
+
+disableRSS = true
+enableRobotsTXT = true
+disableHugoGeneratorInject = true
+
+[params]
+	description = "Land, Air, and Space Robotics Laboratory at Texas A&M University"
+
+
