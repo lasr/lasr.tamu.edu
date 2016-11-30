@@ -11,3 +11,7 @@ hugo server -wv --bind "[your ip address]" -b "http://[your-ip]/"
 ```
 
 Visit `http://[your-ip]/` in your browser. Pages should auto-reload when updated.
+
+## Site Stylesheets
+
+To develop stylesheets, first install [Sass](http://sass-lang.com/) node bindings with `npm i -g node-sass` and run `npm run watch-sass` from the repository root. Sass styles are located in `src/style/` and rendered to `static/css/`
