@@ -1,0 +1,12 @@
+<!-- Look up authors in the author data -->
+{{- $d := .data }}
+{{- $l := len .authors }}
+{{- if eq $l 1 }}
+  {{- partial "cite-author" (dict "data" $d "author" (index .authors 0)) }}
+{{- else }}
+  {{- $last := sub $l 1 }}
+  {{- range first $last .authors }}
+    {{- partial "cite-author" (dict "data" $d "author" .) }},&#32;
+  {{- end }}
+  {{- partial "cite-author" (dict "data" $d "author" (index .authors $last)) }}
+{{- end -}}

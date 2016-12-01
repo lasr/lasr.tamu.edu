@@ -10,5 +10,13 @@
   	<link rel="icon" type="image/png" href="/favicon.png" />
 	</head>
 	<body{{- if isset .Params "bodyclass" }} class="{{- index .Params "bodyclass" }}"{{- end }}>
-		<div class="container_12">
+		<header><a href="/">LASR Lab</a></header>
+		<nav>
+			<ul>
+				<li><a href="/research">Research</a></li>
+				<li><a href="/publications">Publications</a></li>
+				<li><a href="/people">People</a></li>
+				<li><a href="/contact">Contact</a></li>
+			</ul>
+		</nav>
 	

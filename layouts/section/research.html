@@ -1,0 +1,11 @@
+{{- partial "header.html" }}
+
+<h2>Research Topics</h2>
+
+<ul>
+{{- range .Data.Pages }}
+	{{- .Render "li" }}
+{{- end }}
+</ul>
+
+{{- partial "footer.html" }}
