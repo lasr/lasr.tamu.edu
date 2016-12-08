@@ -1,12 +1,23 @@
 [
   {
-    "title": "",
-    "authors": [],
-    "date": "1970-01-01",
+    "title": "Multivehicle Spacing Along Smooth Curvilinear Paths",
+    "authors": ["weitz", "hurtado"],
+    "date": "2010-08-02",
     "conference": {
-      "name": "",
-      "city": "",
-      "dates": ""
+      "name": "AIAA Guidance, Navigation, and Control Conference",
+      "city": "Toronto, ON",
+      "dates": "August. 2-5, 2010"
+    },
+    "pdf": null
+  },
+  {
+    "title": "Cooperative Manipulation of a Flexible Object by Nonholonomically-Constrained Robots",
+    "authors": ["weitz", "doebbler", "holmstrom", "hurtado"],
+    "date": "2008-08-18",
+    "conference": {
+      "name": "AIAA GNC Conference",
+      "city": "Honolulu, HI",
+      "dates": "August 18-21, 2008"
     },
     "pdf": null
   }

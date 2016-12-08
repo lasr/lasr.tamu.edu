@@ -8,4 +8,25 @@
 {{- end }}
 </ul>
 
-{{- partial "footer.html" }}
+<h1>Dissertations</h1>
+<ul>
+{{- range sort .Site.Data.dissertations "date" "desc" }}
+	<li>{{- partial "dissertation.html" (dict "dissertation" . "authors" $a) }}</li>
+{{- end }}
+</ul>
+
+<h1>Master's Theses</h1>
+<ul>
+{{- range sort .Site.Data.theses "date" "desc" }}
+	<li>{{- partial "thesis.html" (dict "thesis" . "authors" $a) }}</li>
+{{- end }}
+</ul>
+
+<h1>Conference Papers</h1>
+<ul>
+{{- range sort .Site.Data.papers "date" "desc" }}
+	<li>{{- partial "paper.html" (dict "paper" . "authors" $a) }}</li>
+{{- end }}
+</ul>
+
+{{ partial "footer.html" }}

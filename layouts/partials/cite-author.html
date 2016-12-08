@@ -1,7 +1,7 @@
-<!-- Print an author's name, in citation format: Last, F.M. or Last, F. -->
+<!-- Print an author's name, in citation format: F.M. Last or F. Last -->
 {{- if isset .data .author }}
 	{{- $a := index .data .author }}
-	{{- $a.l }}, {{ substr $a.f 0 1 }}.{{ if gt (len $a.m) 0 }}{{ substr $a.m 0 1 }}.{{ end -}}
+	{{- substr $a.f 0 1 }}.{{ if gt (len $a.m) 0 }}{{ substr $a.m 0 1 }}.{{ end }} {{ $a.l -}}
 {{- else }}
 	{{- title .author -}}
 {{- end -}}

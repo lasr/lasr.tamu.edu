@@ -24,6 +24,11 @@
     "m": "",
     "l": "Doebbler"
   },
+  "holmstrom": {
+    "f": "Kristen",
+    "m": "",
+    "l": "Holmstrom"
+  },
   "hurtado": {
     "f": "John",
     "m": "E",
@@ -50,9 +55,9 @@
     "l": "Kolomenski"
   },
   "macomber": {
-    "f": "",
+    "f": "Brent",
     "m": "",
-    "l": ""
+    "l": "Macomber"
   },
   "moody": {
     "f": "Clark",
@@ -78,5 +83,10 @@
     "f": "Puneet",
     "m": "",
     "l": "Singla"
+  },
+  "weitz": {
+    "f": "Lesley",
+    "m": "",
+    "l": "Weitz"
   }
 }
