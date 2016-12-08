@@ -1,1 +1,1 @@
-{{- partial "authorlist" (dict "authors" .paper.authors "data" .authors) }}, "{{ .paper.title }}," {{ .paper.conference.name }}, {{ .paper.conference.city }}, {{ .paper.conference.dates }}. {{ if (gt (len .paper.pdf) 0) }}<a href="{{ .paper.pdf }}">PDF</a>{{ end }}
+{{- partial "authorlist" (dict "authors" .paper.authors "data" .authors) }}, "{{ .paper.title }}," {{ .paper.conference.name }}, {{ .paper.conference.city }}, {{ .paper.conference.dates }}. {{ if .paper.pdf }}<a href="{{ .paper.pdf }}">PDF</a>{{ end }}
