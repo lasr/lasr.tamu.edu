@@ -1,0 +1,82 @@
+{{- partial "header.html" . }}
+
+{{- .Content }}
+
+{{- $a := .Site.Data.authors }}
+{{- $person := .Params.author }}
+
+{{- $books := .Site.Data.books }}
+{{- $dissertations := .Site.Data.dissertations }}
+{{- $theses := .Site.Data.theses }}
+{{- $articles := .Site.Data.articles }}
+{{- $papers := .Site.Data.papers }}
+
+{{- $.Scratch.Set "books" (slice) }}
+{{- range $i, $l := .Site.Data.books }}
+	{{- if (in $l.authors $person) }}
+		{{- $.Scratch.Add "books" $i }}
+	{{- end }}
+{{- end }}
+{{- $nb := len ($.Scratch.Get "books") }}
+
+{{- $.Scratch.Set "dissertations" (slice) }}
+{{- range $i, $l := .Site.Data.dissertations }}
+	{{- if (in $l.author $person) }}
+		{{- $.Scratch.Add "dissertations" $i }}
+	{{- end }}
+{{- end }}
+{{- $nd := len ($.Scratch.Get "dissertations") }}
+
+{{- $.Scratch.Set "theses" (slice) }}
+{{- range $i, $l := .Site.Data.theses }}
+	{{- if (in $l.author $person) }}
+		{{- $.Scratch.Add "theses" $i }}
+	{{- end }}
+{{- end }}
+{{- $nt := len ($.Scratch.Get "theses") }}
+
+{{- $.Scratch.Set "articles" (slice) }}
+{{- range $i, $l := .Site.Data.articles }}
+	{{- if (in $l.authors $person) }}
+		{{- $.Scratch.Add "articles" $i }}
+	{{- end }}
+{{- end }}
+{{- $na := len ($.Scratch.Get "articles") }}
+
+{{- $.Scratch.Set "papers" (slice) }}
+{{- range $i, $l := .Site.Data.papers }}
+	{{- if (in $l.authors $person) }}
+		{{- $.Scratch.Add "papers" $i }}
+	{{- end }}
+{{- end }}
+{{- $np := len ($.Scratch.Get "papers") }}
+
+{{- $tot := add $np (add (add $nb $nd) (add $nt $na)) }}
+
+{{- if gt $tot 0 }}
+<h1>Publications</h1>
+
+<ul>
+	{{- range $.Scratch.Get "books" }}
+	<li>{{- partial "book.html" (dict "book" (index $books .) "authors" $a) }}</li>
+	{{- end }}
+
+	{{- range $.Scratch.Get "dissertations" }}
+	<li>{{- partial "dissertation.html" (dict "dissertation" (index $dissertations .) "authors" $a) }}</li>
+	{{- end }}
+
+	{{- range $.Scratch.Get "theses" }}
+	<li>{{- partial "thesis.html" (dict "thesis" (index $theses .) "authors" $a) }}</li>
+	{{- end }}
+
+	{{- range $.Scratch.Get "articles" }}
+	<li>{{- partial "article.html" (dict "article" (index $articles .) "authors" $a) }}</li>
+	{{- end }}
+
+	{{- range $.Scratch.Get "papers" }}
+	<li>{{- partial "paper.html" (dict "paper" (index $papers .) "authors" $a) }}</li>
+	{{- end }}
+</ul>
+{{- end }}
+
+{{ partial "footer.html" . }}
