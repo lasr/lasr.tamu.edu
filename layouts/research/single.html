@@ -2,4 +2,94 @@
 
 {{- .Content }}
 
+{{- $people := .Params.people }}
+{{- if (gt (len $people) 0) }}
+	<h2>People</h2>
+	<ul>
+	{{- range .Site.Pages }}
+		{{- if (isset .Params "author") }}
+			<li><a href="{{ .URL }}">{{ .Title }}</a></li>
+		{{- end }}
+	{{- end }}
+	</ul>
+{{- end }}
+
+
+{{- $a := .Site.Data.authors }}
+{{- $topic := .Params.research }}
+
+{{- $books := sort .Site.Data.books "year" "desc" }}
+{{- $dissertations := sort .Site.Data.dissertations "date" "desc" }}
+{{- $theses := sort .Site.Data.theses "date" "desc" }}
+{{- $articles := sort .Site.Data.articles "date" "desc" }}
+{{- $papers := sort .Site.Data.papers "date" "desc" }}
+
+{{- $.Scratch.Set "books" (slice) }}
+{{- range $i, $l := $books }}
+	{{- if (in $l.authors $topic) }}
+		{{- $.Scratch.Add "books" $i }}
+	{{- end }}
+{{- end }}
+{{- $nb := len ($.Scratch.Get "books") }}
+
+{{- $.Scratch.Set "dissertations" (slice) }}
+{{- range $i, $l := $dissertations }}
+	{{- if (in $l.author $topic) }}
+		{{- $.Scratch.Add "dissertations" $i }}
+	{{- end }}
+{{- end }}
+{{- $nd := len ($.Scratch.Get "dissertations") }}
+
+{{- $.Scratch.Set "theses" (slice) }}
+{{- range $i, $l := $theses }}
+	{{- if (in $l.author $topic) }}
+		{{- $.Scratch.Add "theses" $i }}
+	{{- end }}
+{{- end }}
+{{- $nt := len ($.Scratch.Get "theses") }}
+
+{{- $.Scratch.Set "articles" (slice) }}
+{{- range $i, $l := $articles }}
+	{{- if (in $l.authors $topic) }}
+		{{- $.Scratch.Add "articles" $i }}
+	{{- end }}
+{{- end }}
+{{- $na := len ($.Scratch.Get "articles") }}
+
+{{- $.Scratch.Set "papers" (slice) }}
+{{- range $i, $l := $papers }}
+	{{- if (in $l.topics $topic) }}
+		{{- $.Scratch.Add "papers" $i }}
+	{{- end }}
+{{- end }}
+{{- $np := len ($.Scratch.Get "papers") }}
+
+{{- $tot := add $np (add (add $nb $nd) (add $nt $na)) }}
+
+{{- if gt $tot 0 }}
+<h2>Related Publications</h2>
+
+<ul>
+	{{- range $.Scratch.Get "books" }}
+	<li>{{- partial "book.html" (dict "book" (index $books .) "authors" $a) }}</li>
+	{{- end }}
+
+	{{- range $.Scratch.Get "dissertations" }}
+	<li>{{- partial "dissertation.html" (dict "dissertation" (index $dissertations .) "authors" $a) }}</li>
+	{{- end }}
+
+	{{- range $.Scratch.Get "theses" }}
+	<li>{{- partial "thesis.html" (dict "thesis" (index $theses .) "authors" $a) }}</li>
+	{{- end }}
+
+	{{- range $.Scratch.Get "articles" }}
+	<li>{{- partial "article.html" (dict "article" (index $articles .) "authors" $a) }}</li>
+	{{- end }}
+
+	{{- range $.Scratch.Get "papers" }}
+	<li>{{- partial "paper.html" (dict "paper" (index $papers .) "authors" $a) }}</li>
+	{{- end }}
+</ul>
+{{- end }}
+
 {{- partial "footer.html" . }}

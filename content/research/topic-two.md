@@ -1,6 +1,9 @@
 +++
 title = "Research Topic 2"
 date = "2010-01-01"
+
+research = "topic2"
+people = ["turner", "junkins", "hurtado"]
 +++
 
 # Research Topic Two

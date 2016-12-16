@@ -1,4 +1,9 @@
 {
+  "bai": {
+    "f": "Xiaoli",
+    "m": "",
+    "l": "Bai"
+  },
   "baniyounes": {
     "f": "Ahmad",
     "m": "",
@@ -23,6 +28,11 @@
     "f": "James",
     "m": "",
     "l": "Doebbler"
+  },
+  "elgohary": {
+    "f": "Tarek",
+    "m": "",
+    "l": "Elgohary"
   },
   "holmstrom": {
     "f": "Kristen",
@@ -59,10 +69,30 @@
     "m": "",
     "l": "Macomber"
   },
+  "majji": {
+    "f": "Manoranjan",
+    "m": "",
+    "l": "Majji"
+  },
   "moody": {
     "f": "Clark",
     "m": "K",
     "l": "Moody"
+  },
+  "mortari": {
+    "f": "Daniele",
+    "m": "",
+    "l": "Mortari"
+  },
+  "nosterk": {
+    "f": "Randy",
+    "m": "",
+    "l": "Nosterk"
+  },
+  "parish": {
+    "f": "Julie",
+    "m": "J",
+    "l": "Parish"
   },
   "probe": {
     "f": "Austin",
@@ -79,10 +109,35 @@
     "m": "",
     "l": "Schaub"
   },
+  "sharma": {
+    "f": "Rajnish",
+    "m": "",
+    "l": "Sharma"
+  },
+  "siddarth": {
+    "f": "Anshu",
+    "m": "",
+    "l": "Siddarth"
+  },
   "singla": {
     "f": "Puneet",
     "m": "",
     "l": "Singla"
+  },
+  "turner": {
+    "f": "James",
+    "m": "",
+    "l": "Turner"
+  },
+  "vavrina": {
+    "f": "M",
+    "m": "",
+    "l": "Vavrina"
+  },
+  "vian": {
+    "f": "J",
+    "m": "",
+    "l": "Vian"
   },
   "weitz": {
     "f": "Lesley",

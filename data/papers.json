@@ -1,24 +1,251 @@
 [
   {
+    "title": "Generalized Algorithms for Least Squares Optimization for Nonlinear Observation Models and Newton’s Method",
+    "authors": ["baniyounes", "turner"],
+    "booktitle": "Proc. of the Jer-Nan Juang Astrodynamics Symposium, College Station, 24-26 June, 2012",
+    "date": "2012-06-24",
+    "pages": "425-44",
+    "note": "AAS 12-626",
+    "pdf": null
+  },
+  {
+    "title": "Decisions in Predictive Location and Mapping",
+    "authors": ["majji", "junkins"],
+    "booktitle": "Proc. of the Jer-Nan Juang Astrodynamics Symposium, College Station, 24-26 June, 2012",
+    "date": "2012-06-24",
+    "pages": "445-58",
+    "note": "AAS 12-630",
+    "pdf": null
+  },
+  {
+    "title": "The Role of Total Least Squares in the Common Attitude Estimation Problem",
+    "authors": ["cavalieri", "hurtado"],
+    "booktitle": "Proc. of the Jer-Nan Juang Astrodynamics Symposium, College Station, 24-26 June, 2012",
+    "date": "2012-06-24",
+    "pages": "519-30",
+    "note": "AAS 12-633",
+    "pdf": null
+  },
+  {
+    "title": "Orthogonal Polynomial Approximation in Higher Dimensions: Applications in Astrodynamics",
+    "authors": ["junkins", "baniyounes", "bai"],
+    "booktitle": "Proc. of the Jer-Nan Juang Astrodynamics Symposium, College Station, 24-26 June, 2012",
+    "date": "2012-06-24",
+    "pages": "531-94",
+    "note": "AAS 12-634",
+    "pdf": null
+  },
+  {
+    "title": "High-Order Uncertainity Propagation Using State Transition Tensor Series",
+    "authors": ["baniyounes", "turner", "majji", "junkins"],
+    "booktitle": "Proc. of the Jer-Nan Juang Astrodynamics Symposium, College Station, 24-26 June, 2012",
+    "date": "2012-06-24",
+    "pages": "595-610",
+    "note": "AAS 12-636",
+    "pdf": null
+  },
+  {
+    "title": "High-Order State Feedback Gain Sensitivity Calculations Using Computational Differentiation",
+    "authors": ["baniyounes", "turner", "majji", "junkins"],
+    "booktitle": "Proc. of the Jer-Nan Juang Astrodynamics Symposium, College Station, 24-26 June, 2012",
+    "date": "2012-06-24",
+    "pages": "611-8",
+    "note": "AAS 12-637",
+    "pdf": null
+  },
+  {
+    "title": "Numerical Integration of Constrained Multi-Body Dynamical Systems Using 5th Order Exact Analytic Continuation Algorithm",
+    "authors": ["baniyounes", "turner"],
+    "booktitle": "Proc. of the Jer-Nan Juang Astrodynamics Symposium, College Station, 24-26 June, 2012",
+    "date": "2012-06-24",
+    "pages": "619-26",
+    "note": "AAS 12-638",
+    "pdf": null
+  },
+  {
+    "title": "High-Order Analytic Continuation and Numerical Stability Analysis for the Classical Two-Body Problem",
+    "authors": ["elgohary", "turner", "junkins"],
+    "booktitle": "Proc. of the Jer-Nan Juang Astrodynamics Symposium, College Station, 24-26 June, 2012",
+    "date": "2012-06-24",
+    "pages": "627-46",
+    "note": "AAS 12-639",
+    "pdf": null
+  },
+  {
+    "title": "Spacecraft Attitude Control Using Two Control Torques",
+    "authors": ["kimdh", "turner"],
+    "booktitle": "Proc. of the Jer-Nan Juang Astrodynamics Symposium, College Station, 24-26 June, 2012",
+    "date": "2012-06-24",
+    "pages": "647-66",
+    "note": "AAS 12-640",
+    "pdf": null
+  },
+  {
+    "title": "On the Integration of M-Dimensional Expectation Operators",
+    "authors": ["turner", "baniyounes"],
+    "booktitle": "Proc. of the Jer-Nan Juang Astrodynamics Symposium, College Station, 24-26 June, 2012",
+    "date": "2012-06-24",
+    "pages": "667-82",
+    "note": "AAS 12-641",
+    "pdf": null
+  },
+
+
+  {
+    "title": "Laboratory Experiments for Position and Attitude Estimation Using the Cayley Attitude Technique",
+    "authors": ["cavalieri", "macomber", "majji", "hurtado"],
+    "booktitle": "Proc. of the 22nd AAS/AIAA Space Flight Mechanics Meeting, Charleston, 29 January-2 February, 2012",
+    "date": "2012-02-01",
+    "note": "AAS 12-240",
+    "pdf": null
+  },
+  {
+    "title": "Modified Chebyshev-Picard Iteration Methods for Station-Keeping of Translunar Halo Orbits",
+    "authors": ["bai", "junkins"],
+    "booktitle": "Proc. of the 22nd AAS/AIAA Space Flight Mechanics Meeting, Charleston, 29 January-2 February, 2012",
+    "date": "2012-01-29",
+    "note": "AAS 12-155",
+    "pdf": null
+  },
+  {
+    "title": "Reducing Walker, Flower, and Streets-of-Coverage Constellations to a Single Constellation Design Framework",
+    "authors": ["davis", "mortari"],
+    "booktitle": "Proc. of the 22nd AAS/AIAA Space Flight Mechanics Meeting, Charleston, 29 January-2 February, 2012",
+    "date": "2012-01-30",
+    "note": "AAS 12-147",
+    "pdf": null
+  },
+  {
+    "title": "Linear Solutions to Single Instance Position and Attitude Estimation",
+    "authors": ["hurtado"],
+    "booktitle": "Proc. of the 22nd AAS/AIAA Space Flight Mechanics Meeting, Charleston, 29 January-2 February, 2012",
+    "date": "2012-01-29",
+    "note": "AAS 12-122",
+    "pdf": null
+  },
+  {
+    "title": "Attitude Estimation in Higher Dimensions",
+    "authors": ["hurtado"],
+    "booktitle": "Proc. of the 22nd AAS/AIAA Space Flight Mechanics Meeting, Charleston, 29 January-2 February, 2012",
+    "date": "2012-01-29",
+    "note": "AAS 12-121",
+    "pdf": null
+  },
+  {
+    "title": "Cayley Attitude Technique",
+    "authors": ["hurtado"],
+    "booktitle": "Proc. of the 22nd AAS/AIAA Space Flight Mechanics Meeting, Charleston, 29 January-2 February, 2012",
+    "date": "2012-01-29",
+    "note": "AAS 12-120",
+    "pdf": null
+  },
+
+  {
+    "title": "Characterizing and Calibrating the Novel PhaseSpace Camera System",
+    "authors": ["davis", "doebbler", "junkins", "vavrina", "vian"],
+    "booktitle": "Proc. of AIAA Guidance, Navigation, and Control Conference 2011, Portland, 8-11 August, 2011",
+    "date": "2011-08-10",
+    "pages": "6469-77",
+    "publisher": "AIAA",
+    "pdf": null
+  },
+  {
+    "title": "Terrain Mapping and Landing Operations Using Vision Based Navigation Systems",
+    "authors": ["majji", "davis", "doebbler", "macomber", "junkins", "vavrina", "vian"],
+    "booktitle": "Proc. of AIAA Guidance, Navigation, and Control Conference 2011, Portland, 8-11 August, 2011",
+    "date": "2011-08-10",
+    "pages": "6454-68",
+    "publisher": "AIAA",
+    "pdf": null
+  },
+  {
+    "title": "State Estimation for Constrained Systems with Redundant Coordinates",
+    "authors": ["parish", "hurtado"],
+    "booktitle": "Proc. of AIAA Guidance, Navigation, and Control Conference 2011, Portland, 8-11 August, 2011",
+    "date": "2011-08-09",
+    "pages": "1818-30",
+    "publisher": "AIAA",
+    "pdf": null
+  },
+  {
+    "title": "Optimal Nonlinear Feedback Control For Control Constraints Problems With Terminal Constraints: An SDRE Approach ",
+    "authors": ["satak", "sharma", "hurtado"],
+    "booktitle": "AAS/AIAA Astrodynamics Specialist Conference, Girwood, AK, 31 July-4 August, 2011",
+    "date": "2011-08-04",
+    "note": "AAS 11-642",
+    "pdf": null
+  },
+  {
+    "title": "Experimental Investigations of Trajectory Guidance and Control for Differential Games",
+    "authors": ["satak", "cavalieri", "moody", "siddarth", "hurtado"],
+    "booktitle": "AAS/AIAA Astrodynamics Specialist Conference, Girwood, AK, 31 July-4 August, 2011",
+    "date": "2011-08-04",
+    "note": "AAS 11-639",
+    "pdf": null
+  },
+  {
+    "title": "Estimation Strategies for Dynamical Systems with Equality Constraints",
+    "authors": ["parish", "hurtado"],
+    "booktitle": "AAS/AIAA Astrodynamics Specialist Conference, Girwood, AK, 31 July-4 August, 2011",
+    "date": "2011-08-01",
+    "note": "AAS 11-424",
+    "pdf": null
+  },
+  {
+    "title": "Small Body Proximity Sensing With a Novel HD3D LADAR System",
+    "authors": ["junkins", "majji", "macomber", "davis", "doebbler", "nosterk"],
+    "booktitle": "Proc. of the 34th Annual AAS Rocky Mountain Section Guidance and Control Conference, Breckenridge, 4-9 February, 2011",
+    "date": "2011-02-04",
+    "note": "AAS 11-054",
+    "pdf": null
+  },
+  {
+    "title": "Nonlinear Tracking Control of Maneuvering Rigid Spacecraft",
+    "authors": ["baniyounes", "turner", "majji", "junkins"],
+    "booktitle": "Proc. of the 21st AAS/AIAA Space Flight Mechanics Meeting, New Orleans, 13-17 February, 2011",
+    "date": "2011-02-13",
+    "volume": "140",
+    "note": "AAS 11-168",
+    "pdf": null
+  },
+  {
+    "title": "An Investigation of State Feedback Gain Sensitivity Calculations",
+    "authors": ["baniyounes", "turner", "majji", "junkins"],
+    "booktitle": "Proc. of AIAA/AAS Astrodynamics Specialist Conference, Toronto, 2-5 August, 2010",
+    "date": "2010-08-02",
+    "pages": "1542-65",
+    "publisher": "AIAA",
+    "pdf": null,
+    "topics": ["topic1", "topic2"]
+  },
+  {
+    "title": "Implementing Feedback Control on a Novel Proximity Operations Simulation Platform",
+    "authors": ["cavalieri", "davis", "doebbler", "holmstrom", "hurtado"],
+    "booktitle": "Proc. of AIAA Modeling and Simulation Technologies Conference 2010, Ontario, 2-5 August, 2010",
+    "date": "2010-08-02",
+    "pages": "1108-19",
+    "publisher": "AIAA",
+    "pdf": null,
+    "topics": ["topic2"]
+  },
+  {
     "title": "Multivehicle Spacing Along Smooth Curvilinear Paths",
     "authors": ["weitz", "hurtado"],
+    "booktitle": "Proc. of AIAA Guidance, Navigation, and Control Conference 2010, Ontario, 2-5 August, 2010",
     "date": "2010-08-02",
-    "conference": {
-      "name": "AIAA Guidance, Navigation, and Control Conference",
-      "city": "Toronto, ON",
-      "dates": "August. 2-5, 2010"
-    },
-    "pdf": null
+    "pages": "791-801",
+    "publisher": "AIAA",
+    "pdf": null,
+    "topics": ["topic1"]
   },
   {
     "title": "Cooperative Manipulation of a Flexible Object by Nonholonomically-Constrained Robots",
     "authors": ["weitz", "doebbler", "holmstrom", "hurtado"],
+    "booktitle": "Proc. of AIAA Guidance, Navigation, and Control Conference and Exhibit 2008, Honolulu, 18-21 August, 2008",
     "date": "2008-08-18",
-    "conference": {
-      "name": "AIAA GNC Conference",
-      "city": "Honolulu, HI",
-      "dates": "August 18-21, 2008"
-    },
-    "pdf": null
+    "pages": "5928-37",
+    "publisher": "AIAA",
+    "pdf": null,
+    "topics": ["topic1", "topic2"]
   }
 ]

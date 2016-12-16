@@ -5,14 +5,31 @@
 {{- $a := .Site.Data.authors }}
 {{- $person := .Params.author }}
 
-{{- $books := .Site.Data.books }}
-{{- $dissertations := .Site.Data.dissertations }}
-{{- $theses := .Site.Data.theses }}
-{{- $articles := .Site.Data.articles }}
-{{- $papers := .Site.Data.papers }}
+{{- $.Scratch.Set "research" (slice) }}
+{{- range .Site.Pages }}
+	{{- if (isset .Params "people") }}
+		{{- if and (gt (len .Params.people) 0) (in .Params.people $person) }}
+			{{- $.Scratch.Add "research" . }}
+		{{- end }}
+	{{- end }}
+{{- end }}
+{{- if gt (len ($.Scratch.Get "research")) 0 }}
+<h2>Research Areas</h2>
+<ul>
+	{{- range $.Scratch.Get "research"}}
+		<li><a href="{{ .URL }}">{{ .Title }}</a></li>
+	{{- end }}
+</ul>
+{{- end }}
+
+{{- $books := sort .Site.Data.books "year" "desc" }}
+{{- $dissertations := sort .Site.Data.dissertations "date" "desc" }}
+{{- $theses := sort .Site.Data.theses "date" "desc" }}
+{{- $articles := sort .Site.Data.articles "date" "desc" }}
+{{- $papers := sort .Site.Data.papers "date" "desc" }}
 
 {{- $.Scratch.Set "books" (slice) }}
-{{- range $i, $l := .Site.Data.books }}
+{{- range $i, $l := $books }}
 	{{- if (in $l.authors $person) }}
 		{{- $.Scratch.Add "books" $i }}
 	{{- end }}
@@ -20,7 +37,7 @@
 {{- $nb := len ($.Scratch.Get "books") }}
 
 {{- $.Scratch.Set "dissertations" (slice) }}
-{{- range $i, $l := .Site.Data.dissertations }}
+{{- range $i, $l := $dissertations }}
 	{{- if (in $l.author $person) }}
 		{{- $.Scratch.Add "dissertations" $i }}
 	{{- end }}
@@ -28,7 +45,7 @@
 {{- $nd := len ($.Scratch.Get "dissertations") }}
 
 {{- $.Scratch.Set "theses" (slice) }}
-{{- range $i, $l := .Site.Data.theses }}
+{{- range $i, $l := $theses }}
 	{{- if (in $l.author $person) }}
 		{{- $.Scratch.Add "theses" $i }}
 	{{- end }}
@@ -36,7 +53,7 @@
 {{- $nt := len ($.Scratch.Get "theses") }}
 
 {{- $.Scratch.Set "articles" (slice) }}
-{{- range $i, $l := .Site.Data.articles }}
+{{- range $i, $l := $articles }}
 	{{- if (in $l.authors $person) }}
 		{{- $.Scratch.Add "articles" $i }}
 	{{- end }}
@@ -44,7 +61,7 @@
 {{- $na := len ($.Scratch.Get "articles") }}
 
 {{- $.Scratch.Set "papers" (slice) }}
-{{- range $i, $l := .Site.Data.papers }}
+{{- range $i, $l := $papers }}
 	{{- if (in $l.authors $person) }}
 		{{- $.Scratch.Add "papers" $i }}
 	{{- end }}
@@ -54,7 +71,7 @@
 {{- $tot := add $np (add (add $nb $nd) (add $nt $na)) }}
 
 {{- if gt $tot 0 }}
-<h1>Publications</h1>
+<h2>Publications</h2>
 
 <ul>
 	{{- range $.Scratch.Get "books" }}

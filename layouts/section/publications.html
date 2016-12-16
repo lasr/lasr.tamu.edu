@@ -3,7 +3,7 @@
 <h1>Books</h1>
 <ul>
 {{- $a := .Site.Data.authors }}
-{{- range .Site.Data.books }}
+{{- range sort .Site.Data.books "year" "desc" }}
 	<li>{{- partial "book.html" (dict "book" . "authors" $a) }}</li>
 {{- end }}
 </ul>
