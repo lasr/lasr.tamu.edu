@@ -29,7 +29,7 @@ For development, launch Hugo in watch mode, from the repository root:
 hugo server -wv --bind "[your ip address]" -b "http://[your-ip]/"
 ```
 
-Visit `http://[your-ip]/` in your browser. Pages should auto-reload when updated.
+Visit `http://[your-ip]:1313/` in your browser. Pages should auto-reload when updated.
 
 ### Site Stylesheets
 
