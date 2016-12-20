@@ -1,6 +1,6 @@
 {{- partial "header.html" . }}
 
-<h1>Books</h1>
+<h2>Books</h2>
 <ul>
 {{- $a := .Site.Data.authors }}
 {{- range sort .Site.Data.books "year" "desc" }}
@@ -8,21 +8,21 @@
 {{- end }}
 </ul>
 
-<h1>Dissertations</h1>
+<h2>Dissertations</h2>
 <ul>
 {{- range sort .Site.Data.dissertations "date" "desc" }}
 	<li>{{- partial "dissertation.html" (dict "dissertation" . "authors" $a) }}</li>
 {{- end }}
 </ul>
 
-<h1>Master's Theses</h1>
+<h2>Master's Theses</h2>
 <ul>
 {{- range sort .Site.Data.theses "date" "desc" }}
 	<li>{{- partial "thesis.html" (dict "thesis" . "authors" $a) }}</li>
 {{- end }}
 </ul>
 
-<h1>Conference Papers</h1>
+<h2>Conference Papers</h2>
 <ul>
 {{- range sort .Site.Data.papers "date" "desc" }}
 	<li>{{- partial "paper.html" (dict "paper" . "authors" $a) }}</li>

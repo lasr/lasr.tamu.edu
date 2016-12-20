@@ -33,7 +33,7 @@ Visit `http://[your-ip]:1313/` in your browser. Pages should auto-reload when up
 
 ### Site Stylesheets
 
-To develop stylesheets, first install [Sass](http://sass-lang.com/) node bindings with `npm i -g node-sass` and run `npm run watch-sass` from the repository root. Sass styles are located in `src/style/` and rendered to `static/css/`
+To develop stylesheets, first install [Sass](http://sass-lang.com/install) then run `npm run watch-sass` from the repository root. Sass styles are located in `src/style/` and rendered to `static/css/`
 
 ## Notes
 * Research section uses a content [list template](https://gohugo.io/templates/list/) to render research topics
