@@ -4,6 +4,10 @@ date = "2010-01-01"
 
 research = "topic1"
 people = ["moody", "hurtado"]
+
+img = ""
+
+research_category = "Grande Research"
 +++
 
 # Research Topic One

@@ -13,10 +13,10 @@
 		<header><a href="/">LASR Lab</a></header>
 		<nav>
 			<ul>
-				<li><a href="/research">Research</a></li>
-				<li><a href="/publications">Publications</a></li>
-				<li><a href="/people">People</a></li>
-				<li><a href="/contact">Contact</a></li>
+				{{- $ := . }}
+				{{- range .Site.Menus.main }}
+					<li{{ if ($.IsMenuCurrent "main" . )}} class="current"{{ end }}><a href="{{ .URL }}">{{ .Name | safeHTML }}</span></a></li>
+				{{- end }}
 			</ul>
 		</nav>
 	

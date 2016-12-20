@@ -156,7 +156,8 @@
     "date": "2011-08-10",
     "pages": "6454-68",
     "publisher": "AIAA",
-    "pdf": null
+    "pdf": null,
+    "topics": ["vision"]
   },
   {
     "title": "State Estimation for Constrained Systems with Redundant Coordinates",
@@ -215,8 +216,7 @@
     "date": "2010-08-02",
     "pages": "1542-65",
     "publisher": "AIAA",
-    "pdf": null,
-    "topics": ["topic1", "topic2"]
+    "pdf": null
   },
   {
     "title": "Implementing Feedback Control on a Novel Proximity Operations Simulation Platform",
@@ -226,7 +226,7 @@
     "pages": "1108-19",
     "publisher": "AIAA",
     "pdf": null,
-    "topics": ["topic2"]
+    "topics": ["homer", "proxops"]
   },
   {
     "title": "Multivehicle Spacing Along Smooth Curvilinear Paths",
@@ -235,8 +235,7 @@
     "date": "2010-08-02",
     "pages": "791-801",
     "publisher": "AIAA",
-    "pdf": null,
-    "topics": ["topic1"]
+    "pdf": null
   },
   {
     "title": "Cooperative Manipulation of a Flexible Object by Nonholonomically-Constrained Robots",
@@ -245,7 +244,6 @@
     "date": "2008-08-18",
     "pages": "5928-37",
     "publisher": "AIAA",
-    "pdf": null,
-    "topics": ["topic1", "topic2"]
+    "pdf": null
   }
 ]

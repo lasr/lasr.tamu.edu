@@ -2,10 +2,14 @@
 
 <h2>Research Topics</h2>
 
+{{- range .Data.Pages.GroupByParam "research_category" }}
+<h3>{{- .Key }}</h3>
+
 <ul>
-{{- range .Data.Pages }}
-	{{- .Render "li" }}
-{{- end }}
+	{{- range .Pages.ByDate.Reverse }}
+		{{- .Render "li" }}
+	{{- end }}
 </ul>
+{{- end }}
 
 {{ partial "footer.html" . }}
