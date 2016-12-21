@@ -22,5 +22,8 @@
   "homepage": "https://github.com/lasr/lasr.tamu.edu#readme",
   "devDependencies": {
     "sass": "^0.5.0"
+  },
+  "dependencies": {
+    "unsemantic": "^1.1.3"
   }
 }

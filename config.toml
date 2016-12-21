@@ -14,20 +14,15 @@ disableHugoGeneratorInject = true
 [menu]
 [[menu.main]]
 	name = "Research"
-	pre = ""
-	post = ""
 	url = "/research/"
 	weight = 0
 [[menu.main]]
 	name = "Publications"
-	pre = ""
-	post = ""
 	url = "/publications/"
 	weight = 10
 [[menu.main]]
 	name = "People"
-	pre = ""
-	post = ""
+	identifier = "people"
 	url = "/people/"
 	weight = 20
 # Contact menu details located in front matter of /content/contact.md

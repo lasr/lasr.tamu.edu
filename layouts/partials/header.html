@@ -13,16 +13,29 @@
 	</head>
 	<body{{- if isset .Params "bodyclass" }} class="{{- index .Params "bodyclass" }}"{{- end }}>
 		<header>
-			<h1><a href="/"><span>LASR Lab</span></a></h1>
-			<nav>
+			<nav class="grid-container">
+				<h1><a href="/"><span>LASR Lab</span></a></h1>
+				<label for="toggle" id="toggle-label"><span></span></label>
+				<input type="checkbox" id="toggle" />
 				<ul>
 				{{- $ := . }}
 				{{- range .Site.Menus.main }}
-					<li{{ if ($.IsMenuCurrent "main" . )}} class="current"{{ end }}><a href="{{ .URL }}">{{ .Name | safeHTML }}</span></a></li>
+					{{- if or ($.IsMenuCurrent "main" . ) ($.HasMenuCurrent "main" . ) }}
+						<li class="current"><a href="{{ .URL }}">{{ .Name | safeHTML }}</span></a></li>
+					{{- else }}
+						<li><a href="{{ .URL }}">{{ .Name | safeHTML }}</span></a></li>
+					{{- end }}
 				{{- end }}
 				</ul>
+				<div class="clear"></div>
 			</nav>
+			{{- if and (isset .Params "bodyclass") (eq (index .Params "bodyclass") "home") }}
+			<section class="grid-container hero-text">
+				<h1>Land, Air &amp; Space Robotics</h1>
+				<p>Advancing the state of the art in<br />analytical mechanics and control, tensegrity, and proximity operations<br />at Texas A&amp;M University</p>
+			</section>
+			{{- end }}
 		</header>
 		<main>
-			<article>
+			<article class="grid-container">
 	

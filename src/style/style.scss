@@ -1,3 +1,191 @@
+@import "reset";
+
+// Unsemantic fluid grid settings
+// http://unsemantic.com/sass-documentation
+$unsemantic-prefix-suffix-support: false;
+$unsemantic-push-pull-support: false;
+$container-max-width: 1200px;
+$media-mobile-max: 767px;
+$media-tablet-min: 768px;
+$media-tablet-max: 1024px;
+$media-desktop-min: 1025px;
+@import "../../node_modules/unsemantic/grid";
+
+// Theme colors
+$foreground: #333;
+$background: #fff;
+$textOnDark: #ccc;
+$headerLink: #fff;
+$darkBlue: #1a2d40;
+$highlightBlue: #426e9b;
+$darkBackground: #161616;
+
+// Various font stacks. Use this like `font-family: $whateverStack;`
+// https://www.sitepoint.com/eight-definitive-font-stacks/
+$timesNewRomanStack: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+$georgiaStack: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+$garamondStack: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+$arialStack: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$verdanaStack: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+$trebuchetStack: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+$impactStack: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+$monospaceStack: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+
+// System fonts for native UI text
+// https://bitsofco.de/the-new-system-font-stack/
+$systemStack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
 body {
-	background-color: white;
+	color: $foreground;
+	background-color: $background;
+	font: 16px/1.0em $arialStack;
+}
+
+a {
+	color: $foreground;
+	text-decoration: underline;
+	&:visited {}
+	&:hover {}
+}
+
+header {
+	background-color: $darkBlue;
+	padding: 1.5em 0;
+
+	a {
+		$aColor: fade-out($headerLink, 0.35);
+		color: $aColor;
+		text-decoration: none;
+		&:hover {
+			color: fade-in($aColor, 0.25);
+		}
+	}
+
+	nav {
+		// $logo-w: 1259px;
+		// $logo-h: 217px;
+		// $logo-r: 1259.0 / 217.0;
+		$logo-w: 557px;
+		$logo-h: 96px;
+		$logo-r: 557.0 / 96.0;
+		$box-h: 48px; // 3.0em @ 16px/em
+		$box-w: $box-h * $logo-r;
+		h1 {
+			a {
+				background: transparent url('/img/lasr-logo-48@2x.png') 0 center no-repeat;
+				background-size: $box-w $box-h;
+				display: block;
+				width: $box-w;
+				height: $box-h;
+				float: left;
+				opacity: 0.65;
+
+				span {
+					display: none;
+				}
+			}
+		}
+		label {
+			span {}
+		}
+
+		ul {
+			float: right;
+			li {
+				display: inline;
+				float: left;
+				a {
+					font-size: 1.1em;
+					text-transform: uppercase;
+					font-weight: bold;
+					display: block;
+					line-height: $box-h;
+					padding: 0 1.0em;
+				}
+				&:first-child a {
+					padding-left: 0;
+				}
+				&:last-child a {
+					padding-right: 0;
+				}
+				&.current {
+					a {
+						color: lighten($textOnDark, 15%);
+					}
+				}
+			}
+		}
+	}
+
+	section {
+		$baseColor: fade-out($headerLink, 0.35);
+		text-align: center;
+		font-family: $georgiaStack;
+		h1 {
+			color: fade-in($baseColor, 0.2);
+			font-size: 2.0em;
+			margin: 1.5em 0 1.0em;
+		}
+		p {
+			color: $baseColor;
+			margin: 1.0em 0 2.0em 0;
+			line-height: 1.5em;
+		}
+	}
+}
+
+main {
+	article {
+		h1, h2, h3, h4, h5, h6 {
+			font-family: $georgiaStack;
+			font-weight: bold;
+		}
+	}
+}
+
+footer { }
+
+// Hamburger menu elements
+#toggle {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: -9999px;
+}
+#toggle-label {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	// Hamburger menu functionality: click the label to check the box
+	#toggle-label {
+		display: block;
+	}
+	nav ul {
+		display: none;
+	}
+	// When box is checked, show the menu
+	#toggle[type=checkbox]:checked ~ ul {
+		display: block;
+	}
+}
+
+@media (max-width: $media-mobile-max) {
+	// Mobile-only
+	header section h1 {
+		font-size: 1.5em;
+	}
+}
+
+@media (min-width: $media-tablet-min) and (max-width: $media-tablet-max) {
+	// Tablet-only
+}
+
+@media (min-width: $media-desktop-min) {
+	// Desktop-only
+}
+
+@media (max-width: $media-tablet-max) {
+	// Mobile and Tablet, no Desktop
 }

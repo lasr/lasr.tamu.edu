@@ -10,6 +10,9 @@ author = "hurtado"
 role = "faculty"
 joined = "2009-09-01"
 left = ""
+
+[menu.main]
+	parent = "people"
 +++
 
 # Johnny Hurtado
