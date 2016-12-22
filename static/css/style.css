@@ -438,17 +438,26 @@ table {
     clear: both;
     width: 100%; } }
 body {
-  color: #333;
-  background-color: #fff;
+  color: #eee;
+  background-color: #1a2d40;
   font: 16px/1em Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1; }
+
 a {
-  color: #333;
+  color: #eee;
   text-decoration: underline; }
 
 header {
-  background-color: #1a2d40;
-  padding: 1.5em 0; }
+  background: #1a2d40 url("/img/homer-bg.jpg") center -218px no-repeat;
+  padding: 1.5em 0;
+  border-bottom: 1px solid #426e9b; }
   header a {
     color: rgba(255, 255, 255, 0.65);
     text-decoration: none; }
@@ -483,20 +492,29 @@ header {
       header nav ul li.current a {
         color: #f2f2f2; }
   header section {
-    text-align: center;
-    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif; }
+    text-align: center; }
     header section h1 {
-      color: rgba(255, 255, 255, 0.85);
+      color: rgba(255, 255, 255, 0.75);
+      font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
       font-size: 2.0em;
       margin: 1.5em 0 1.0em; }
     header section p {
-      color: rgba(255, 255, 255, 0.65);
+      color: rgba(255, 255, 255, 0.75);
       margin: 1.0em 0 2.0em 0;
       line-height: 1.5em; }
+
+body.home header {
+  background-position-y: -300px; }
 
 main article h1, main article h2, main article h3, main article h4, main article h5, main article h6 {
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
   font-weight: bold; }
+
+footer {
+  padding: 1.0em 0;
+  background-color: #0b141c;
+  color: #9cb9d7;
+  border-top: 1px solid #426e9b; }
 
 #toggle {
   width: 0;
