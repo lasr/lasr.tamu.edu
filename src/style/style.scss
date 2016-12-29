@@ -110,13 +110,13 @@ header {
 			li {
 				display: inline;
 				float: left;
+				padding: 0 1.0em;
 				a {
 					font-size: 1.1em;
 					text-transform: uppercase;
 					font-weight: bold;
 					display: block;
 					line-height: $box-h;
-					padding: 0 1.0em;
 				}
 				&:first-child a {
 					padding-left: 0;
@@ -127,6 +127,7 @@ header {
 				&.current {
 					a {
 						color: lighten($textOnDark, 15%);
+						border-bottom: 2px solid lighten($textOnDark, 15%);
 					}
 				}
 			}
@@ -134,10 +135,10 @@ header {
 	}
 
 	section {
-		$baseColor: fade-out($headerLink, 0.25);
+		$baseColor: fade-out($headerLink, 0.15);
 		text-align: center;
 		h1 {
-			color: $baseColor;
+			color: $headerLink;
 			font-family: $georgiaStack;
 			font-size: 2.0em;
 			margin: 1.5em 0 1.0em;
