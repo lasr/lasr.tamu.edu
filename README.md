@@ -7,6 +7,11 @@ How to update the site:
 ### Adding News Items
 
 ### Adding a Publication
+Places to look for proceedings documents:
+
+* http://www.univelt.com/Advances.page.3
+* http://aas-rocky-mountain-section.org/conference-info/
+* http://www.proceedings.com/
 
 ### Adding a New Lab Member
 
